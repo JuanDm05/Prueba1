@@ -1,0 +1,50 @@
+﻿@model Prueba1.Models.UsuarioAlumnoModel;
+@{
+    ViewData["Title"] = "Crear";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h1>Crear</h1>
+<form asp-action="Crear" asp-controller="UsuarioAlumnoModel" method="post">
+    <div class="col-6">
+        <lable class="form-lable">Alumno</lable>
+        <input asp-for="alumno" type="text" class="form-control" />
+
+
+    </div>
+    <div class="col-6">
+        <lable class="form-lable">Apellido Paterno</lable>
+        <input asp-for="apellidoPaterno" type="text" class="form-control">
+    </div>
+    <div class="col-6">
+        <lable class="form-lable">Apellido Materno</lable>
+        <input asp-for="apellidoPaterno" type="text" class="form-control">
+
+    </div>
+    <div class="col-6">
+        <lable class="form-lable">Grupo</lable>
+        <input asp-for="Grupo" type="text" class="form-control">
+
+    </div>
+    <div class="col-6">
+        <lable class="form-lable">Carrera</lable>
+        <input asp-for="Carrera" type="text" class="form-control">
+
+    </div>
+    <div class="col-6">
+        <lable class="form-lable">Cuatrimestre</lable>
+        <input asp-for="Cuatrimestre" type="text" class="form-control">
+
+    </div>
+    <div class="col-6">
+        <lable class="form-lable">correo</lable>
+        <input asp-for="correo" type="text" class="form-control">
+
+    </div>
+    <div class="col-4">
+        <button type="submit" class="btn btn-primary mb-3">Guardar</button>
+
+        <a>Volver a la lista</a>
+
+    </div>
+</form>

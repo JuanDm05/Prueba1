@@ -1,0 +1,15 @@
+﻿@model Prueba1.Models.AlumnoModel;
+@{
+    ViewData["Title"] = "Crear";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h1>Crear</h1>
+<form asp-action="Crear" asp-controller="AlumnoModel" method="post">
+    <div class="col-6">
+        <lable class="form-lable">Alumno</lable>
+        <input type="text" class="form-control" />
+
+    </div>
+
+</form>
